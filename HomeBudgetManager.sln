@@ -5,17 +5,17 @@ VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9E58572A-EE0F-47C9-A7C1-0FF831517CCD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CCBF7173-0CA3-4921-A683-0E6C59897A2C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeBudgetManager.Web", "src\HomeBudgetManager.Web\HomeBudgetManager.Web.csproj", "{C0F9D94E-1B01-4031-B465-2EBD8ACC0F2C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeBudgetManager.Test", "src\HomeBudgetManager.Test\HomeBudgetManager.Test.csproj", "{8375334A-5851-4F5D-B79E-4593961FC7DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeBudgetManager.Web", "src\HomeBudgetManager.Web\HomeBudgetManager.Web.csproj", "{C0F9D94E-1B01-4031-B465-2EBD8ACC0F2C}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HomeBudgetManager.Data", "src\HomeBudgetManager.Data\HomeBudgetManager.Data.shproj", "{F061A58C-75FE-4960-9797-4C7B1D1D7C10}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HomeBudgetManager.Repository", "src\HomeBudgetManager.Repository\HomeBudgetManager.Repository.shproj", "{36BF0FAE-827F-4ED8-83C1-422909938240}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HomeBudgetManager.Service", "src\HomeBudgetManager.Service\HomeBudgetManager.Service.shproj", "{C209C09D-A711-4610-BEB1-CC466AF844B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B1DA42FD-872D-4CD8-A679-2E628D170429}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeBudgetManager.Test", "tests\HomeBudgetManager.Test\HomeBudgetManager.Test.csproj", "{31FFFA14-5518-43D4-979C-0D8DB7E4F659}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -32,20 +32,20 @@ Global
 		{C0F9D94E-1B01-4031-B465-2EBD8ACC0F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0F9D94E-1B01-4031-B465-2EBD8ACC0F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0F9D94E-1B01-4031-B465-2EBD8ACC0F2C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8375334A-5851-4F5D-B79E-4593961FC7DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8375334A-5851-4F5D-B79E-4593961FC7DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8375334A-5851-4F5D-B79E-4593961FC7DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8375334A-5851-4F5D-B79E-4593961FC7DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31FFFA14-5518-43D4-979C-0D8DB7E4F659}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31FFFA14-5518-43D4-979C-0D8DB7E4F659}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31FFFA14-5518-43D4-979C-0D8DB7E4F659}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31FFFA14-5518-43D4-979C-0D8DB7E4F659}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C0F9D94E-1B01-4031-B465-2EBD8ACC0F2C} = {9E58572A-EE0F-47C9-A7C1-0FF831517CCD}
-		{8375334A-5851-4F5D-B79E-4593961FC7DF} = {CCBF7173-0CA3-4921-A683-0E6C59897A2C}
 		{F061A58C-75FE-4960-9797-4C7B1D1D7C10} = {9E58572A-EE0F-47C9-A7C1-0FF831517CCD}
 		{36BF0FAE-827F-4ED8-83C1-422909938240} = {9E58572A-EE0F-47C9-A7C1-0FF831517CCD}
 		{C209C09D-A711-4610-BEB1-CC466AF844B4} = {9E58572A-EE0F-47C9-A7C1-0FF831517CCD}
+		{31FFFA14-5518-43D4-979C-0D8DB7E4F659} = {B1DA42FD-872D-4CD8-A679-2E628D170429}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EFA01738-87A1-4759-9567-8A776861431B}
