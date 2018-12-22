@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B1DA42FD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeBudgetManager.Test", "tests\HomeBudgetManager.Test\HomeBudgetManager.Test.csproj", "{31FFFA14-5518-43D4-979C-0D8DB7E4F659}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeBudgetManager.Infrastructure", "src\HomeBudgetManager.Infrastructure\HomeBudgetManager.Infrastructure.csproj", "{442CC68D-6ECF-4FBD-A995-7FE93A489906}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		src\HomeBudgetManager.Repository\HomeBudgetManager.Repository.projitems*{36bf0fae-827f-4ed8-83c1-422909938240}*SharedItemsImports = 13
@@ -36,6 +38,10 @@ Global
 		{31FFFA14-5518-43D4-979C-0D8DB7E4F659}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31FFFA14-5518-43D4-979C-0D8DB7E4F659}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31FFFA14-5518-43D4-979C-0D8DB7E4F659}.Release|Any CPU.Build.0 = Release|Any CPU
+		{442CC68D-6ECF-4FBD-A995-7FE93A489906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{442CC68D-6ECF-4FBD-A995-7FE93A489906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{442CC68D-6ECF-4FBD-A995-7FE93A489906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{442CC68D-6ECF-4FBD-A995-7FE93A489906}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{36BF0FAE-827F-4ED8-83C1-422909938240} = {9E58572A-EE0F-47C9-A7C1-0FF831517CCD}
 		{C209C09D-A711-4610-BEB1-CC466AF844B4} = {9E58572A-EE0F-47C9-A7C1-0FF831517CCD}
 		{31FFFA14-5518-43D4-979C-0D8DB7E4F659} = {B1DA42FD-872D-4CD8-A679-2E628D170429}
+		{442CC68D-6ECF-4FBD-A995-7FE93A489906} = {9E58572A-EE0F-47C9-A7C1-0FF831517CCD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EFA01738-87A1-4759-9567-8A776861431B}
