@@ -9,5 +9,6 @@
     <Import_RootNamespace>HomeBudgetManager.Repository</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)IRepository.cs" />
   </ItemGroup>
 </Project>
