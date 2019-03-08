@@ -1,0 +1,44 @@
+﻿<div fxLayout fxLayoutAlign="center center">
+    <div class="card text-center col-md-4">
+        <div class="card-header card-header-danger">
+            <h4 class="card-title">Login</h4>
+        </div>
+        <div class="card-body">
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                <div *ngIf="form.errors?.auth"
+                        class="error-block">
+                    {{form.errors.auth}}
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Login</label>
+                            <input type="text" class="form-control" formControlName="Username" placeholder="Login" required>
+                            <div *ngIf="hasError('Username')"
+                                    class="error-block">
+                                Please insert a valid username.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class="form-control" formControlName="Password" placeholder="Password" required>
+                            <div *ngIf="hasError('Password')"
+                                    class="error-block">
+                                Please insert a valid password.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" [disabled]="form.invalid" class="btn btn-success mat-raised-button">Submit</button>
+                <div class="clearfix"></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+

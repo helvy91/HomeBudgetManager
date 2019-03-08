@@ -5,26 +5,31 @@ VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9E58572A-EE0F-47C9-A7C1-0FF831517CCD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeBudgetManager.Web", "src\HomeBudgetManager.Web\HomeBudgetManager.Web.csproj", "{C0F9D94E-1B01-4031-B465-2EBD8ACC0F2C}"
-EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HomeBudgetManager.Data", "src\HomeBudgetManager.Data\HomeBudgetManager.Data.shproj", "{F061A58C-75FE-4960-9797-4C7B1D1D7C10}"
-EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HomeBudgetManager.Repository", "src\HomeBudgetManager.Repository\HomeBudgetManager.Repository.shproj", "{36BF0FAE-827F-4ED8-83C1-422909938240}"
-EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HomeBudgetManager.Service", "src\HomeBudgetManager.Service\HomeBudgetManager.Service.shproj", "{C209C09D-A711-4610-BEB1-CC466AF844B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeBudgetManager.Web", "src\Presentation\HomeBudgetManager.Web\HomeBudgetManager.Web.csproj", "{C0F9D94E-1B01-4031-B465-2EBD8ACC0F2C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B1DA42FD-872D-4CD8-A679-2E628D170429}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeBudgetManager.Test", "tests\HomeBudgetManager.Test\HomeBudgetManager.Test.csproj", "{31FFFA14-5518-43D4-979C-0D8DB7E4F659}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeBudgetManager.Test", "tests\HomeBudgetManager.Test\HomeBudgetManager.Test.csproj", "{31FFFA14-5518-43D4-979C-0D8DB7E4F659}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeBudgetManager.Infrastructure", "src\HomeBudgetManager.Infrastructure\HomeBudgetManager.Infrastructure.csproj", "{442CC68D-6ECF-4FBD-A995-7FE93A489906}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeBudgetManager.Infrastructure", "src\Infrastructure\HomeBudgetManager.Infrastructure\HomeBudgetManager.Infrastructure.csproj", "{442CC68D-6ECF-4FBD-A995-7FE93A489906}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{D24E2C55-F410-49A0-971B-87B62E510E37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{ECDE5502-21BA-4519-9F27-C005A2327587}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeBudgetManager.Persistance", "src\Infrastructure\HomeBudgetManager.Persistance\HomeBudgetManager.Persistance.csproj", "{9D81F746-74BA-4DEB-9AF6-01B273A8B3B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{5644A361-FB0C-4FB9-9EBD-C4C63D28E11E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeBudgetManager.Application", "src\Core\HomeBudgetManager.Application\HomeBudgetManager.Application.csproj", "{9B45F4F0-CA3A-4E51-BDDA-C78413C1B252}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeBudgetManager.Domain", "src\Core\HomeBudgetManager.Domain\HomeBudgetManager.Domain.csproj", "{EBFE11AE-7802-45D0-893F-43089AF0FE29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{AD73444D-9ABA-49DC-8C2B-E26946BAEA1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeBudgetManager.Common", "src\Common\HomeBudgetManager.Common\HomeBudgetManager.Common.csproj", "{455E79EA-C850-4C5E-8B51-CF021B46A144}"
 EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		src\HomeBudgetManager.Repository\HomeBudgetManager.Repository.projitems*{36bf0fae-827f-4ed8-83c1-422909938240}*SharedItemsImports = 13
-		src\HomeBudgetManager.Service\HomeBudgetManager.Service.projitems*{c209c09d-a711-4610-beb1-cc466af844b4}*SharedItemsImports = 13
-		src\HomeBudgetManager.Data\HomeBudgetManager.Data.projitems*{f061a58c-75fe-4960-9797-4c7b1d1d7c10}*SharedItemsImports = 13
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -42,17 +47,38 @@ Global
 		{442CC68D-6ECF-4FBD-A995-7FE93A489906}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{442CC68D-6ECF-4FBD-A995-7FE93A489906}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{442CC68D-6ECF-4FBD-A995-7FE93A489906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D81F746-74BA-4DEB-9AF6-01B273A8B3B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D81F746-74BA-4DEB-9AF6-01B273A8B3B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D81F746-74BA-4DEB-9AF6-01B273A8B3B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D81F746-74BA-4DEB-9AF6-01B273A8B3B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B45F4F0-CA3A-4E51-BDDA-C78413C1B252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B45F4F0-CA3A-4E51-BDDA-C78413C1B252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B45F4F0-CA3A-4E51-BDDA-C78413C1B252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B45F4F0-CA3A-4E51-BDDA-C78413C1B252}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBFE11AE-7802-45D0-893F-43089AF0FE29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBFE11AE-7802-45D0-893F-43089AF0FE29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBFE11AE-7802-45D0-893F-43089AF0FE29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBFE11AE-7802-45D0-893F-43089AF0FE29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{455E79EA-C850-4C5E-8B51-CF021B46A144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{455E79EA-C850-4C5E-8B51-CF021B46A144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{455E79EA-C850-4C5E-8B51-CF021B46A144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{455E79EA-C850-4C5E-8B51-CF021B46A144}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{C0F9D94E-1B01-4031-B465-2EBD8ACC0F2C} = {9E58572A-EE0F-47C9-A7C1-0FF831517CCD}
-		{F061A58C-75FE-4960-9797-4C7B1D1D7C10} = {9E58572A-EE0F-47C9-A7C1-0FF831517CCD}
-		{36BF0FAE-827F-4ED8-83C1-422909938240} = {9E58572A-EE0F-47C9-A7C1-0FF831517CCD}
-		{C209C09D-A711-4610-BEB1-CC466AF844B4} = {9E58572A-EE0F-47C9-A7C1-0FF831517CCD}
+		{C0F9D94E-1B01-4031-B465-2EBD8ACC0F2C} = {D24E2C55-F410-49A0-971B-87B62E510E37}
 		{31FFFA14-5518-43D4-979C-0D8DB7E4F659} = {B1DA42FD-872D-4CD8-A679-2E628D170429}
-		{442CC68D-6ECF-4FBD-A995-7FE93A489906} = {9E58572A-EE0F-47C9-A7C1-0FF831517CCD}
+		{442CC68D-6ECF-4FBD-A995-7FE93A489906} = {ECDE5502-21BA-4519-9F27-C005A2327587}
+		{D24E2C55-F410-49A0-971B-87B62E510E37} = {9E58572A-EE0F-47C9-A7C1-0FF831517CCD}
+		{ECDE5502-21BA-4519-9F27-C005A2327587} = {9E58572A-EE0F-47C9-A7C1-0FF831517CCD}
+		{9D81F746-74BA-4DEB-9AF6-01B273A8B3B3} = {ECDE5502-21BA-4519-9F27-C005A2327587}
+		{5644A361-FB0C-4FB9-9EBD-C4C63D28E11E} = {9E58572A-EE0F-47C9-A7C1-0FF831517CCD}
+		{9B45F4F0-CA3A-4E51-BDDA-C78413C1B252} = {5644A361-FB0C-4FB9-9EBD-C4C63D28E11E}
+		{EBFE11AE-7802-45D0-893F-43089AF0FE29} = {5644A361-FB0C-4FB9-9EBD-C4C63D28E11E}
+		{AD73444D-9ABA-49DC-8C2B-E26946BAEA1D} = {9E58572A-EE0F-47C9-A7C1-0FF831517CCD}
+		{455E79EA-C850-4C5E-8B51-CF021B46A144} = {AD73444D-9ABA-49DC-8C2B-E26946BAEA1D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EFA01738-87A1-4759-9567-8A776861431B}

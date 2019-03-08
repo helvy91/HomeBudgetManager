@@ -1,0 +1,29 @@
+﻿.busy-indicator-hidden {
+    visibility: hidden;
+}
+
+.busy-indicator-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.2;
+    z-index: 900;
+}
+
+.busy-indicator {
+    position: fixed;
+    z-index: 1000;
+    height: 2em;
+    width: 2em;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: red;
+}
+

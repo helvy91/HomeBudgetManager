@@ -1,0 +1,18 @@
+﻿<h3 mat-dialog-title>Add user</h3>
+<div mat-dialog-content>
+    <form [form]="form">
+        <mat-form-field>
+            <input matInput [(ngModel)]="data.login" placeholder="Login" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput [(ngModel)]="data.password" placeholder="Password" type="password" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput [(ngModel)]="data.email" placeholder="Email" type="email" required>
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions align="end">
+    <button class="btn btn-danger mat-raised-button" (click)="cancel()">Cancel</button>
+    <button class="btn btn-success mat-raised-button" (click)="submit()">Add</button>
+</div>
