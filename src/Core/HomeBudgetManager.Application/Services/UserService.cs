@@ -46,6 +46,7 @@ namespace HomeBudgetManager.Application.Services
             {
                 Login = dto.Login,
                 PasswordHash = passwordHash,
+                Email = dto.Email,
                 Salt = salt
             };
 

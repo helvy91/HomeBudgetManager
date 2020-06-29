@@ -17,7 +17,7 @@ namespace HomeBudgetManager.Persistance.Migrations
                     CreatedAt = table.Column<DateTime>(nullable: false),
                     ModifiedAt = table.Column<DateTime>(nullable: false),
                     Login = table.Column<string>(maxLength: 20, nullable: false),
-                    Email = table.Column<string>(maxLength: 18, nullable: false),
+                    Email = table.Column<string>(maxLength: 50, nullable: false),
                     PasswordHash = table.Column<string>(nullable: false),
                     Salt = table.Column<string>(nullable: false)
                 },

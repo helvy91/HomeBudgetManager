@@ -9,7 +9,7 @@ namespace HomeBudgetManager.Persistance.Configurations
         public void Configure(EntityTypeBuilder<User> builder)
         {
             builder.Property(x => x.Login).IsRequired().HasMaxLength(20);
-            builder.Property(x => x.Email).IsRequired().HasMaxLength(18);
+            builder.Property(x => x.Email).IsRequired().HasMaxLength(50);
             builder.Property(x => x.PasswordHash).IsRequired();
             builder.Property(x => x.Salt).IsRequired();
 
